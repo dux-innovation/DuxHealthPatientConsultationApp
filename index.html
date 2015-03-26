@@ -29,14 +29,19 @@
 				    type: sap.ui.core.mvc.ViewType.JS
 				});
 
+				var view_dates = sap.ui.view({
+				    id: "view_dates",
+				    viewName: "view.dates",
+				    type: sap.ui.core.mvc.ViewType.JS
+				});
+
 				var page2 = sap.m.Button({
 				    text: "Pagina2"
 				});
 				
 				var app = new sap.m.App({
 				    initialPage: view_units,
-				    pages: [view_specialties, view_units, page2]
-
+				    pages: [view_specialties, view_units, view_dates, page2]
 				});
 
 				var shell = new sap.m.Shell({
