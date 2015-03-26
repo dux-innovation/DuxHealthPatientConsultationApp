@@ -16,10 +16,15 @@ sap.ui.jsview("view.confirmation",
      */
     createContent: function(oController)
     {
+        var layout_vertical = sap.ui.layout.VerticalLayout(
+        {
+            width: "100%",
+        });
 
         var button_confirm = new sap.m.Button(
         {
             text: "Confirmar",
+            width: "100%",
             type: sap.m.ButtonType.Accept,
             press: oController.onPressConfirm,
         });
@@ -28,16 +33,20 @@ sap.ui.jsview("view.confirmation",
         var button_cancel = new sap.m.Button(
         {
             text: "Cancelar",
+            width: "100%",
             type: sap.m.ButtonType.Reject,
             press: oController.onPressCancel,
         });
+
+        layout_vertical.addContent(button_confirm);
+        layout_vertical.addContent(button_cancel);
 
         var page = new sap.m.Page(
         {
             title: "Solicitação de Exame - Confirmação",
             showNavButton: true,
             navButtonPress: oController.onNavButtonPress,
-            content: [button_confirm, button_cancel]
+            content: [layout_vertical]
         });
 
         return page;
