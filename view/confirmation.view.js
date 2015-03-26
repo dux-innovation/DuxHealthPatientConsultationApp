@@ -20,7 +20,7 @@ sap.ui.jsview("view.confirmation",
         var button_confirm = new sap.m.Button(
         {
             text: "Confirmar",
-            style: sap.m.ButtonType.Accept,
+            type: sap.m.ButtonType.Accept,
             press: function()
             {
                 alert('Alert from ' + button_confirm.getText());
@@ -31,7 +31,7 @@ sap.ui.jsview("view.confirmation",
         var button_cancel = new sap.m.Button(
         {
             text: "Cancelar",
-            style: sap.m.ButtonType.Reject,
+            type: sap.m.ButtonType.Reject,
             press: function()
             {
                 alert('Alert from ' + button_cancel.getText());
