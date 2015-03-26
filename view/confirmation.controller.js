@@ -36,4 +36,10 @@ sap.ui.controller("view.confirmation",
     //
     //	}
 
+    onNavButtonPress: function()
+    {
+        var app = sap.ui.getCore().byId("shell").getApp();
+        var next = sap.ui.getCore().byId("view_dates");
+        app.back(next, "slide");
+    }
 });

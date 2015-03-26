@@ -20,6 +20,8 @@ sap.ui.jsview("view.confirmation",
         var page = new sap.m.Page(
         {
             title: "Solicitação de Exame - Confirmação",
+            showNavButton: true,
+            navButtonPress: oController.onNavButtonPress,
             content: []
         });
 

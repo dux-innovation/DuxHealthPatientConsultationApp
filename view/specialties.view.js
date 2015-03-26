@@ -1,4 +1,5 @@
-sap.ui.jsview("view.specialties", {
+sap.ui.jsview("view.specialties",
+{
 
     /**
      * Specifies the Controller belonging to this View. In the case that it is
@@ -7,7 +8,8 @@ sap.ui.jsview("view.specialties", {
      *
      * @memberOf view.specialties
      */
-    getControllerName: function() {
+    getControllerName: function()
+    {
         return "view.specialties";
     },
 
@@ -18,23 +20,31 @@ sap.ui.jsview("view.specialties", {
      *
      * @memberOf view.specialties
      */
-    createContent: function(oController) {
-        var table = new sap.m.Table({
-            items: {
+    createContent: function(oController)
+    {
+        var table = new sap.m.Table(
+        {
+            items:
+            {
                 path: "/especialidades",
-                template: new sap.m.ColumnListItem({
+                template: new sap.m.ColumnListItem(
+                {
                     type: sap.m.ListType.Active,
-                    cells: [new sap.m.Text({
+                    cells: [new sap.m.Text(
+                    {
                         text: "{nome}",
                     }), ],
                 })
             },
-            headerToolbar: new sap.m.Toolbar({
+            headerToolbar: new sap.m.Toolbar(
+            {
                 content: [], // sap.ui.core.Control
             }),
             infoToolbar: undefined,
-            columns: [new sap.m.Column({
-                header: new sap.m.Text({
+            columns: [new sap.m.Column(
+            {
+                header: new sap.m.Text(
+                {
                     text: "Especialidade",
                 })
             })],
@@ -42,8 +52,11 @@ sap.ui.jsview("view.specialties", {
             itemPress: oController.onItemPress,
         });
 
-        var page = new sap.m.Page({
+        var page = new sap.m.Page(
+        {
             title: "Solicitação de Exame - Especialidades",
+            showNavButton: true,
+            navButtonPress: oController.onNavButtonPress,
             content: [table]
         });
 

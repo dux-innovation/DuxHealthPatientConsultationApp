@@ -61,6 +61,8 @@ sap.ui.jsview("view.dates",
         var page = new sap.m.Page(
         {
             title: "Solicitação de Exame - Dia e Horário",
+            showNavButton: true,
+            navButtonPress: oController.onNavButtonPress,
             content: [table]
         });
 

@@ -41,6 +41,13 @@ sap.ui.controller("view.dates",
         var app = sap.ui.getCore().byId("shell").getApp();
         var next = sap.ui.getCore().byId("view_confirmation");
         app.to(next, "slide");
+    },
+
+    onNavButtonPress: function()
+    {
+        var app = sap.ui.getCore().byId("shell").getApp();
+        var next = sap.ui.getCore().byId("view_units");
+        app.back(next, "slide");
     }
 
 });

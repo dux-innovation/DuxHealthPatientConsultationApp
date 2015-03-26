@@ -37,6 +37,8 @@ sap.ui.jsview("view.units", {
 
         var page = new sap.m.Page({
             title: "Solicitação de Exame - Unidade",
+            showNavButton: true,
+            navButtonPress: oController.onNavButtonPress,
             content: [table]
         });
 
