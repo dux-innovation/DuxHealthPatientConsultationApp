@@ -54,10 +54,7 @@ sap.ui.jsview("view.dates",
                     })
                 })
             ],
-            select: function(oEvent)
-            {
-                var control = oEvent.getSource();
-            },
+            itemPress: oController.onItemPress,
 
         });
 

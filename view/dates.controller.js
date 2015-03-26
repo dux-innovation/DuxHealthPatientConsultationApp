@@ -1,4 +1,5 @@
-sap.ui.controller("view.dates", {
+sap.ui.controller("view.dates",
+{
 
     /**
      * Called when a controller is instantiated and its View controls (if available) are already created.
@@ -34,5 +35,12 @@ sap.ui.controller("view.dates", {
     //	onExit: function() {
     //
     //	}
+
+    onItemPress: function()
+    {
+        var app = sap.ui.getCore().byId("shell").getApp();
+        var next = sap.ui.getCore().byId("view_confirmation");
+        app.to(next, "slide");
+    }
 
 });
