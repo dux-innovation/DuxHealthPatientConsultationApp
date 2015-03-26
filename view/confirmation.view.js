@@ -17,12 +17,33 @@ sap.ui.jsview("view.confirmation",
     createContent: function(oController)
     {
 
+        var button_confirm = new sap.m.Button(
+        {
+            text: "Confirmar",
+            style: sap.m.ButtonType.Accept,
+            press: function()
+            {
+                alert('Alert from ' + button_confirm.getText());
+            }
+        });
+
+
+        var button_cancel = new sap.m.Button(
+        {
+            text: "Cancelar",
+            style: sap.m.ButtonType.Reject,
+            press: function()
+            {
+                alert('Alert from ' + button_cancel.getText());
+            }
+        });
+
         var page = new sap.m.Page(
         {
             title: "Solicitação de Exame - Confirmação",
             showNavButton: true,
             navButtonPress: oController.onNavButtonPress,
-            content: []
+            content: [button_confirm, button_cancel]
         });
 
         return page;
