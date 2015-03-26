@@ -1,79 +1,55 @@
 {
-  "especialidades": [
-    {
-      "nome": "Cardiologista",
-      "unidades": [
-        {
-          "unidade": "Centro"
-        },
-        {
-          "unidade": "Lapa"
-        },
-        {
-          "unidade": "Morumbi"
-        },
-        {
-          "unidade": "Itaim Paulista"
-        }
-      ],
-      "medicos": [
-        {
-          "nome": "Dr A"
-        },
-        {
-          "nome": "Dr B"
-        },
-        {
-          "nome": "Dr C"
-        },
-        {
-          "nome": "Dr D"
-        }
-      ]
-    },
-    {
-      "nome": "Geriatria",
-      "unidades": [
-        "Centro",
-        "Itaim Paulista",
-        "Tatuape"
-      ],
-      "medicos": [
-        {
-          "nome": "Dr G"
-        },
-        {
-          "nome": "Dr H"
-        },
-        {
-          "nome": "Dr I"
-        },
-        {
-          "nome": "Dr J"
-        }
-      ]
-    },
-    {
-      "nome": "Pediatria",
-      "unidades": [
-        "Itaim Paulista",
-        "Tatuape",
-        "Saúde"
-      ],
-      "medicos": [
-        {
-          "nome": "Dr M"
-        },
-        {
-          "nome": "Dr N"
-        },
-        {
-          "nome": "Dr O"
-        },
-        {
-          "nome": "Dr P"
-        }
-      ]
-    }
-  ]
+    "especialidades": [{
+        "nome": "Cardiologista",
+        "unidades": [{
+            "unidade": "Centro"
+        }, {
+            "unidade": "Lapa"
+        }, {
+            "unidade": "Morumbi"
+        }, {
+            "unidade": "Itaim Paulista"
+        }],
+        "medicos": [{
+            "nome": "Dr A"
+        }, {
+            "nome": "Dr B"
+        }, {
+            "nome": "Dr C"
+        }, {
+            "nome": "Dr D"
+        }]
+    }, {
+        "nome": "Geriatria",
+        "unidades": [
+            "Centro",
+            "Itaim Paulista",
+            "Tatuape"
+        ],
+        "medicos": [{
+            "nome": "Dr G"
+        }, {
+            "nome": "Dr H"
+        }, {
+            "nome": "Dr I"
+        }, {
+            "nome": "Dr J"
+        }]
+    }, {
+        "nome": "Pediatria",
+        "unidades": [
+            "Itaim Paulista",
+            "Tatuape",
+            "Saúde"
+        ],
+        "medicos": [{
+            "nome": "Dr M"
+        }, {
+            "nome": "Dr N"
+        }, {
+            "nome": "Dr O"
+        }, {
+            "nome": "Dr P"
+        }]
+    }]
 }
