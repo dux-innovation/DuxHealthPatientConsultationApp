@@ -35,4 +35,9 @@ sap.ui.controller("view.specialties", {
     //
     //	}
 
+    onItemPress: function() {
+        var app = sap.ui.getCore().byId("shell").getApp();
+        var next = sap.ui.getCore().byId("view_units");
+        app.to(next, "slide");
+    }
 });

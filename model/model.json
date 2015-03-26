@@ -1,54 +1,96 @@
 {
-    "especialidades": [{
+    "especialidades": [
+    {
         "nome": "Cardiologista",
-        "unidades": [{
-            "unidade": "Centro"
-        }, {
+        "unidades": [
+        {
+            "unidade": "Centro",
+            "dates": [
+
+                {
+                    "dia": "01/01/2015",
+                    "horario": "12:00:00"
+                },
+                {
+                    "dia": "01/02/2015",
+                    "horario": "12:00:00"
+                },
+                {
+                    "dia": "01/03/2015",
+                    "horario": "12:00:00"
+                },
+                {
+                    "dia": "01/04/2015",
+                    "horario": "12:00:00"
+                },
+                {
+                    "dia": "01/05/2015",
+                    "horario": "12:00:00"
+                }
+            ]
+        },
+        {
             "unidade": "Lapa"
-        }, {
+        },
+        {
             "unidade": "Morumbi"
-        }, {
+        },
+        {
             "unidade": "Itaim Paulista"
         }],
-        "medicos": [{
+        "medicos": [
+        {
             "nome": "Dr A"
-        }, {
+        },
+        {
             "nome": "Dr B"
-        }, {
+        },
+        {
             "nome": "Dr C"
-        }, {
+        },
+        {
             "nome": "Dr D"
         }]
-    }, {
+    },
+    {
         "nome": "Geriatria",
         "unidades": [
             "Centro",
             "Itaim Paulista",
             "Tatuape"
         ],
-        "medicos": [{
+        "medicos": [
+        {
             "nome": "Dr G"
-        }, {
+        },
+        {
             "nome": "Dr H"
-        }, {
+        },
+        {
             "nome": "Dr I"
-        }, {
+        },
+        {
             "nome": "Dr J"
         }]
-    }, {
+    },
+    {
         "nome": "Pediatria",
         "unidades": [
             "Itaim Paulista",
             "Tatuape",
             "Saúde"
         ],
-        "medicos": [{
+        "medicos": [
+        {
             "nome": "Dr M"
-        }, {
+        },
+        {
             "nome": "Dr N"
-        }, {
+        },
+        {
             "nome": "Dr O"
-        }, {
+        },
+        {
             "nome": "Dr P"
         }]
     }]

@@ -1,10 +1,12 @@
-sap.ui.jsview("view.dates", {
+sap.ui.jsview("view.dates",
+{
 
     /** Specifies the Controller belonging to this View. 
      * In the case that it is not implemented, or that "null" is returned, this View does not have a Controller.
      * @memberOf view.dates
      */
-    getControllerName: function() {
+    getControllerName: function()
+    {
         return "view.dates";
     },
 
@@ -12,33 +14,56 @@ sap.ui.jsview("view.dates", {
      * Since the Controller is given to this method, its event handlers can be attached right away.
      * @memberOf view.dates
      */
-    createContent: function(oController) {
-        var table = new sap.m.Table({
-            items: {
-                path: "/especialidades/0/unidades",
-                template: new sap.m.ColumnListItem({
-                    cells: [new sap.m.Text({
-                        text: "{unidade}",
+    createContent: function(oController)
+    {
+        var table = new sap.m.Table(
+        {
+            items:
+            {
+                path: "/especialidades/0/unidades/0/dates",
+                template: new sap.m.ColumnListItem(
+                {
+                    type: sap.m.ListType.Active,
+                    cells: [new sap.m.Text(
+                    {
+                        text: "{dia}",
+                    }), new sap.m.Text(
+                    {
+                        text: "{horario}",
                     }), ]
                 })
             },
-            headerToolbar: new sap.m.Toolbar({
+            headerToolbar: new sap.m.Toolbar(
+            {
                 content: [], // sap.ui.core.Control
             }),
             infoToolbar: undefined,
-            columns: [new sap.m.Column({
-                header: new sap.m.Text({
-                    text: "Unidade",
+            columns: [
+                new sap.m.Column(
+                {
+                    header: new sap.m.Text(
+                    {
+                        text: "Dia",
+                    })
+                }),
+                new sap.m.Column(
+                {
+                    header: new sap.m.Text(
+                    {
+                        text: "Horário",
+                    })
                 })
-            })],
-            select: function(oEvent) {
+            ],
+            select: function(oEvent)
+            {
                 var control = oEvent.getSource();
             },
 
         });
 
-        var page = new sap.m.Page({
-            title: "Solicitação de Exame - Unidade",
+        var page = new sap.m.Page(
+        {
+            title: "Solicitação de Exame - Dia e Horário",
             content: [table]
         });
 

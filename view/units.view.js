@@ -17,6 +17,7 @@ sap.ui.jsview("view.units", {
             items: {
                 path: "/especialidades/0/unidades",
                 template: new sap.m.ColumnListItem({
+                    type: sap.m.ListType.Active,
                     cells: [new sap.m.Text({
                         text: "{unidade}",
                     }), ]
@@ -31,10 +32,7 @@ sap.ui.jsview("view.units", {
                     text: "Unidade",
                 })
             })],
-            select: function(oEvent) {
-                var control = oEvent.getSource();
-            },
-
+            itemPress: oController.onItemPress,
         });
 
         var page = new sap.m.Page({

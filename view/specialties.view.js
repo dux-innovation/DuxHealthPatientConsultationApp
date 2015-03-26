@@ -23,11 +23,10 @@ sap.ui.jsview("view.specialties", {
             items: {
                 path: "/especialidades",
                 template: new sap.m.ColumnListItem({
+                    type: sap.m.ListType.Active,
                     cells: [new sap.m.Text({
-                            text: "{nome}",
-                        }),
-
-                    ]
+                        text: "{nome}",
+                    }), ],
                 })
             },
             headerToolbar: new sap.m.Toolbar({
@@ -39,10 +38,8 @@ sap.ui.jsview("view.specialties", {
                     text: "Especialidade",
                 })
             })],
-            select: function(oEvent) {
-                var control = oEvent.getSource();
-            },
 
+            itemPress: oController.onItemPress,
         });
 
         var page = new sap.m.Page({
