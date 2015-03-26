@@ -35,13 +35,16 @@
 				    type: sap.ui.core.mvc.ViewType.JS
 				});
 
-				var page2 = sap.m.Button({
-				    text: "Pagina2"
+				var view_confirmation = sap.ui.view(
+				{
+				    id: "view_confirmation",
+				    viewName: "view.confirmation",
+				    type: sap.ui.core.mvc.ViewType.JS
 				});
-				
+
 				var app = new sap.m.App({
 				    initialPage: view_units,
-				    pages: [view_specialties, view_units, view_dates, page2]
+				    pages: [view_specialties, view_units, view_dates, view_confirmation]
 				});
 
 				var shell = new sap.m.Shell({
