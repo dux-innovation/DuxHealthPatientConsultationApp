@@ -21,10 +21,7 @@ sap.ui.jsview("view.confirmation",
         {
             text: "Confirmar",
             type: sap.m.ButtonType.Accept,
-            press: function()
-            {
-                alert('Alert from ' + button_confirm.getText());
-            }
+            press: oController.onPressConfirm,
         });
 
 
@@ -32,10 +29,7 @@ sap.ui.jsview("view.confirmation",
         {
             text: "Cancelar",
             type: sap.m.ButtonType.Reject,
-            press: function()
-            {
-                alert('Alert from ' + button_cancel.getText());
-            }
+            press: oController.onPressCancel,
         });
 
         var page = new sap.m.Page(

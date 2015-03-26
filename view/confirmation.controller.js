@@ -41,5 +41,49 @@ sap.ui.controller("view.confirmation",
         var app = sap.ui.getCore().byId("shell").getApp();
         var next = sap.ui.getCore().byId("view_dates");
         app.back(next, "slide");
-    }
+    },
+
+    onPressConfirm: function(o)
+    {
+        var oDialog1 = new sap.m.Dialog();
+        oDialog1.setTitle("Confirmação");
+        var oText = new sap.m.Text(
+        {
+            text: "Seu exame foi agendado com sucesso. Você receberá um alerta 24 horas antes do mesmo"
+        });
+        oDialog1.addContent(oText);
+        oDialog1.addButton(new sap.m.Button(
+        {
+            text: "OK",
+            press: function()
+            {
+                oDialog1.close();
+            }
+        }));
+        oDialog1.open();
+    },
+
+    onPressCancel: function(o)
+    {
+        var oDialog1 = new sap.m.Dialog();
+        oDialog1.setTitle("Cancelamento");
+        var oText = new sap.m.Text(
+        {
+            text: "Solicitação de exame cancelada"
+        });
+        oDialog1.addContent(oText);
+        oDialog1.addButton(new sap.m.Button(
+        {
+            text: "OK",
+            press: function()
+            {
+                oDialog1.close();
+            }
+        }));
+        oDialog1.open();
+    },
+
+
+
+
 });
