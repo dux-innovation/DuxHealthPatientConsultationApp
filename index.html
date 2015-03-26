@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+				var model_url = sap.ui.model.json.JSONModel("model/model.json");
+				sap.ui.getCore().setModel(model_url);
+
+				sap.ui.localResources("view");
+
+				var view_specialties = sap.ui.view({
+				    id: "view_specialties",
+				    viewName: "view.specialties",
+				    type: sap.ui.core.mvc.ViewType.JS
+				});
+				
+				var view_units = sap.ui.view({
+				    id: "view_units",
+				    viewName: "view.units",
+				    type: sap.ui.core.mvc.ViewType.JS
+				});
+
+				var view_dates = sap.ui.view({
+				    id: "view_dates",
+				    viewName: "view.dates",
+				    type: sap.ui.core.mvc.ViewType.JS
+				});
+
+				var page2 = sap.m.Button({
+				    text: "Pagina2"
+				});
+				
+				var app = new sap.m.App({
+				    initialPage: view_units,
+				    pages: [view_specialties, view_units, view_dates, page2]
+				});
+
+				var shell = new sap.m.Shell({
+				    title: "Solicitação de Exame",
+				    app: app
+				});
+				shell.placeAt("content");
+
+				
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>
