@@ -34,12 +34,34 @@ sap.ui.jsview("view.units", {
             })],
             itemPress: oController.onItemPress,
         });
+        
+        // create the HTML control for Sample 1 (id and variable name are fixed)
+    	var html1 = new sap.ui.core.HTML("html1", {
+    		// the static content as a long string literal
+    		content:"<div><iframe name=\"mapa\" width=\"1600\" height=\"300\" src=\"graph_001.html\"></iframe></div>",
+    		preferDOM : false,			
+    		// use the afterRendering event for 2 purposes
+    		afterRendering : function(e) {
+
+    			// a) add dynamic behavior
+    			if ( !e.getParameters()["isPreservedDOM"] ) {
+    				var $=e.getSource().$();
+    				$.click(function(e) {
+    					addColorBlockAtCursor($, e, 64, 8);
+    				});
+    			}
+        
+    			// just for illustration purposes: update the redraw infos in the page
+//    			updateRedrawInfo(e.getSource().getId()); // note: does not touch / invalidate any UI5 control!
+
+    		}
+    	});
 
         var page = new sap.m.Page({
-            title: "Solicitação de Exame - Unidade",
+            title: "Especialidade por Regiao",
             showNavButton: true,
             navButtonPress: oController.onNavButtonPress,
-            content: [table]
+            content: [html1, table]
         });
 
         return page;
