@@ -24,18 +24,32 @@ sap.ui.jsview("view.units",
                 template: new sap.m.ColumnListItem(
                 {
                     type: sap.m.ListType.Active,
-                    cells: [new sap.m.Text(
+                    cells: [
+                            new sap.m.Image(
+                		            {
+                		                src: "{foto}",
+                		            }),
+                            new sap.m.Text(
                     {
                         text: "{unidade}",
-                    }), ]
+                    }),],
+                    
                 })
             },
+
             headerToolbar: new sap.m.Toolbar(
             {
                 content: [], // sap.ui.core.Control
             }),
             infoToolbar: undefined,
-            columns: [new sap.m.Column(
+            columns: [
+                      new sap.m.Column(
+                    {
+                        header: new sap.m.Text(
+                        {
+                            text: "",
+                        })
+                    }),new sap.m.Column(
             {
                 header: new sap.m.Text(
                 {
@@ -48,7 +62,7 @@ sap.ui.jsview("view.units",
         // create the HTML control for Sample 1 (id and variable name are fixed)
     	var html1 = new sap.ui.core.HTML("html1", {
     		// the static content as a long string literal
-    		content:"<div><iframe name=\"mapa\" width=\"1600\" height=\"300\" src=\"graph_001.html\"></iframe></div>",
+    		content:"<div><iframe align=\"center\" frameborder=\"0\" name=\"mapa\" width=\"1600\" height=\"300\" src=\"graph_001.html\"></iframe></div>",
     		preferDOM : false,			
     		// use the afterRendering event for 2 purposes
     		afterRendering : function(e) {
