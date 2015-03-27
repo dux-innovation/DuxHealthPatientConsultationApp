@@ -6,9 +6,9 @@ sap.ui.controller("view.specialties",
      * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
      * @memberOf view.specialties
      */
-	onInit: function() {
-	this.myModel = new sap.ui.model.json.JSONModel();
-	},
+//	onInit: function() {
+//	this.myModel = new sap.ui.model.json.JSONModel();
+//	},
 
     /**
      * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
@@ -38,10 +38,6 @@ sap.ui.controller("view.specialties",
 
     onItemPress: function()
     {
-//		var json = {};
-//		json.mySecret = sap.ui.getCore().byId(this.createId("secretId")).getValue();
-//		this.myModel().setData(json);
-//		sap.ui.getCore().setModel(this.getmyModel);
         var app = sap.ui.getCore().byId("shell").getApp();
         var next = sap.ui.getCore().byId("view_units");
         app.to(next, "slide");
