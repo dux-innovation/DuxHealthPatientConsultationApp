@@ -41,6 +41,7 @@ sap.ui.controller("view.specialties",
         var app = sap.ui.getCore().byId("shell").getApp();
         var next = sap.ui.getCore().byId("view_units");
         app.to(next, "slide");
+        //Marcel
     },
 
     onNavButtonPress: function()
