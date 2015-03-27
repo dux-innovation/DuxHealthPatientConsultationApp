@@ -30,9 +30,33 @@ sap.ui.jsview("view.units",
                 		                src: "{foto}",
                 		            }),
                             new sap.m.Text(
-                    {
-                        text: "{unidade}",
-                    }),],
+		                    {
+		                        text: "{dia1}",
+		                    }),
+		                    new sap.m.Text(
+				                    {
+				                        text: "{dia2}",
+				                    }),
+				                    
+				                    new sap.m.Text(
+						                    {
+						                        text: "{dia3}",
+						                    }),
+						                    
+						                    new sap.m.Text(
+								                    {
+								                        text: "{dia4}",
+								                    }),
+								                    new sap.m.Text(
+										                    {
+										                        text: "{dia5}",
+										                    }),
+										                    
+										                    new sap.m.Text(
+												                    {
+												                        text: "{dia6}",
+												                    }),
+		                   ],
                     
                 })
             },
@@ -43,18 +67,68 @@ sap.ui.jsview("view.units",
             }),
             infoToolbar: undefined,
             columns: [
+                      
+                      
+				new sap.m.Column(
+				        {
+				            header: new sap.m.Text(
+				            {
+				                text: "",				                
+				            }),
+				        	width: "45%",
+				        }),
+				        
+        
                       new sap.m.Column(
                     {
                         header: new sap.m.Text(
                         {
-                            text: "",
+                            text: "Seg (30/03)",
                         })
-                    }),new sap.m.Column(
-            {
+                    }),
+                    
+                    new sap.m.Column(
+                        {
+                            header: new sap.m.Text(
+                            {
+                                text: "Seg (31/03)",
+                            })
+                        }),
+                            
+                            
+                    new sap.m.Column(
+                    {
+                        header: new sap.m.Text(
+                        {
+                            text: "Qua (01/04)",
+                        })
+                    }),
+                            
+                        new sap.m.Column(
+                        {
+                            header: new sap.m.Text(
+                            {
+                                text: "Qui (02/04)",
+                            })
+                        }),
+                        
+                        new sap.m.Column(
+                        {
+                            header: new sap.m.Text(
+                            {
+                                text: "Sex (03/04)",
+                            })
+                        }),
+                                               
+        
+                 new sap.m.Column(
+                {
                 header: new sap.m.Text(
                 {
-                    text: "Unidade",
-                })
+                    text: "Sab (04/04)",
+                }),
+                
+                
             })],
             itemPress: oController.onItemPress,
         });
