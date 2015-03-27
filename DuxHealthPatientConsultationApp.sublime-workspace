@@ -387,25 +387,29 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 187.0,
-		"last_filter": "pull",
+		"height": 107.0,
+		"last_filter": "push",
 		"selected_items":
 		[
-			[
-				"pull",
-				"Git: Pull"
-			],
 			[
 				"push",
 				"Git: Push"
 			],
 			[
-				"merg",
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"merge",
 				"Git: Merge Branch"
 			],
 			[
 				"change",
 				"Git: Change Branch"
+			],
+			[
+				"stat",
+				"Git: Status"
 			],
 			[
 				"commit",
@@ -416,19 +420,15 @@
 				"Git: Add..."
 			],
 			[
+				"merg",
+				"Git: Merge Branch"
+			],
+			[
 				"branch",
 				"Git: Change Branch"
 			],
 			[
-				"merge",
-				"Git: Merge Branch"
-			],
-			[
 				"status",
-				"Git: Status"
-			],
-			[
-				"stat",
 				"Git: Status"
 			],
 			[
@@ -560,7 +560,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 953.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -585,6 +585,19 @@
 	],
 	"file_history":
 	[
+		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientConsultationApp/README.md",
+		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientConsultationApp/i18n/messageBundle_pt.properties",
+		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientConsultationApp/index.html",
+		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientConsultationApp/view/confirmation.controller.js",
+		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientConsultationApp/view/confirmation.view.js",
+		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientConsultationApp/view/dates.view.js",
+		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientConsultationApp/view/specialties.view.js",
+		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientConsultationApp/view/units.view.js",
+		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientConsultationApp/.project",
+		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientConsultationApp/.settings/org.eclipse.wst.common.component",
+		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientConsultationApp/i18n/messageBundle.properties",
+		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientConsultationApp/pages/index.html",
+		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientConsultationApp/pages/params.json",
 		"/Users/fabiopagoti/Dev/Dux/DuxHealthDoctorPepApp/view/main.view.js",
 		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientDashboard/view/launchpad.view.js",
 		"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientDashboard/index.html",
@@ -699,20 +712,7 @@
 		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/swipe-view-dbg.js",
 		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/sinon-dbg.js",
 		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/URI-dbg.js",
-		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/sinon-server-dbg.js",
-		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/signals-dbg.js",
-		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/require-dbg.js",
-		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/readme.html",
-		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/qunit-reporter-junit-dbg.js",
-		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/SecondLevelDomains-dbg.js",
-		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/IPv6-dbg.js",
-		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/qunit-dbg.js",
-		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/punycode-dbg.js",
-		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/mobify-carousel-dbg.js",
-		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/less-dbg.js",
-		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/jszip-dbg.js",
-		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/jquery-mobile-custom-dbg.js",
-		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/iscroll-dbg.js"
+		"/Users/fabiopagoti/Dropbox/Work/Private Training/ui5/openui5-sdk/resources/sap/ui/thirdparty/sinon-server-dbg.js"
 	],
 	"find":
 	{
@@ -723,6 +723,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/fabiopagoti/Dev/Dux/DuxHealthPatientConsultationApp",
 			""
 		]
 	},
@@ -731,6 +732,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Exame",
+			"Examination",
 			"enabled",
 			"ui.commons.TextField",
 			"&cruz;",
@@ -834,6 +837,8 @@
 		"regex": true,
 		"replace_history":
 		[
+			"Consulta",
+			"Consultation",
 			"",
 			"<duplaclassificacao",
 			"<duplaclassificacao>",
@@ -916,7 +921,7 @@
 	"project": "DuxHealthPatientConsultationApp.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
