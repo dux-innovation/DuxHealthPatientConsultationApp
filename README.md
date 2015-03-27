@@ -1,3 +1,3 @@
-# DuxHealthPatientExaminationApp
-Patient Examination App
+# DuxHealthPatientConsultationApp
+Patient Consultation App
 

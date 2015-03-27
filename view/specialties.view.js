@@ -54,7 +54,7 @@ sap.ui.jsview("view.specialties",
 
         var page = new sap.m.Page(
         {
-            title: "Solicitação de Exame - Especialidades",
+            title: "Solicitação de Consulta - Especialidades",
             showNavButton: true,
             navButtonPress: oController.onNavButtonPress,
             content: [table]

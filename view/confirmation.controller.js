@@ -49,7 +49,7 @@ sap.ui.controller("view.confirmation",
         oDialog1.setTitle("Confirmação");
         var oText = new sap.m.Text(
         {
-            text: "Seu exame foi agendado com sucesso. Você receberá um alerta 24 horas antes do mesmo"
+            text: "Seu Consulta foi agendado com sucesso. Você receberá um alerta 24 horas antes do mesmo"
         });
         oDialog1.addContent(oText);
         oDialog1.addButton(new sap.m.Button(
@@ -69,7 +69,7 @@ sap.ui.controller("view.confirmation",
         oDialog1.setTitle("Cancelamento");
         var oText = new sap.m.Text(
         {
-            text: "Solicitação de exame cancelada"
+            text: "Solicitação de Consulta cancelada"
         });
         oDialog1.addContent(oText);
         oDialog1.addButton(new sap.m.Button(
