@@ -43,7 +43,7 @@ sap.ui.jsview("view.confirmation",
 
         var page = new sap.m.Page(
         {
-            title: "Solicitação de Exame - Confirmação",
+            title: "Solicitação de Consulta - Confirmação",
             showNavButton: true,
             navButtonPress: oController.onNavButtonPress,
             content: [layout_vertical]
