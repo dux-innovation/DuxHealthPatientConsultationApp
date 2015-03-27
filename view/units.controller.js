@@ -46,7 +46,7 @@ sap.ui.controller("view.units",
     onNavButtonPress: function()
     {
         var app = sap.ui.getCore().byId("shell").getApp();
-        var next = sap.ui.getCore().byId("view_specialities");
+        var next = sap.ui.getCore().byId("view_specialties");
         app.back(next, "slide");
     }
 });
