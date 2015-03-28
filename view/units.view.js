@@ -29,6 +29,11 @@ sap.ui.jsview("view.units",
                 		            {
                 		                src: "{foto}",
                 		            }),
+                		            new sap.m.Text(
+        		                    {
+        		                        text: "{distancia}",
+        		                        textAlign : sap.ui.core.TextAlign.Center,
+        		                    }),
                             new sap.m.Text(
 		                    {
 		                        text: "{dia1}",
@@ -75,10 +80,18 @@ sap.ui.jsview("view.units",
 				            {
 				                text: "",				                
 				            }),
-				        	width: "45%",
+				        	width: "294px",
 				        }),
 				        
-        
+				        new sap.m.Column(
+	                    {
+	                        header: new sap.m.Text(
+	                        {
+	                            text: "",
+	                        }),
+	                    	width: "20%",
+	                    }),
+			                    
                       new sap.m.Column(
                     {
                         header: new sap.m.Text(

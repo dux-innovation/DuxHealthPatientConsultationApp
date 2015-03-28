@@ -18,9 +18,16 @@
       data.addColumn('string', 'Marker')
 
       data.addRows([
-        ['Av. Portugal, 530', 'Sua Localização',   'blue' ],
-        ['Hospital e Maternidade Beficiencia Portuguesa', 'Hospital e Maternidade Beficiencia Portuguesa', 'green'],
-        ['Hospital Santa Helena', 'Hospital Santa Helena', 'green']
+        ['Avenida dos Estados, 5001 - Bangú, Santo André - SP, 09210-580, Brazil, Santo Andre', 'Sua Localizacao',   'blue' ],
+        ['Rua Oratório, 300, Santo Andre', 'Dra Regina',   'doctor' ],
+        ['Rua dos Aliados, 280, Santo Andre', 'Dra Edna',   'doctor' ],
+        ['Rua Frei Caneca, 100, Santo Andre', 'Dr Paulo',   'doctor' ],
+        ['Avenida Itamarati, 300, Santo Andre', 'Dr Mauricio',   'doctor' ],
+        ['Avenida Itamarati, 100, Santo Andre', 'Dr Mauricio',   'doctor' ],
+        ['Rua Arujá, 300, Santo Andre', 'Dr Sergio',   'doctor' ],
+        ['Rua das Laranjeiras, 300, Santo Andre', 'Dr Sergio',   'doctor' ],
+        ['Rua João Ribeiro, 300, Santo Andre', 'Dr Sergio',   'doctor' ],
+        ['Rua das Figueiras, 600, Santo Andre', 'Dra Sueli',   'doctor' ],
       ]);
       var url = 'http://icons.iconarchive.com/icons/';
 
@@ -28,12 +35,17 @@
         title: 'Hospitais Próximos a Você!',
         zoomLevel: 15,
         showTip: true,
+        mapType: 'normal',
         useMapTypeControl: true,
         icons: {
           blue: {
             normal:   url + 'icons-land/vista-map-markers/48/Map-Marker-Ball-Azure-icon.png',
             selected: url + 'icons-land/vista-map-markers/48/Map-Marker-Ball-Right-Azure-icon.png'
           },
+          doctor: {
+              normal:   url + 'icons-land/medical/16/People-Doctor-Male-icon.png',
+              selected: url + 'icons-land/medical/16/People-Doctor-Male-icon.png'
+            },
           green: {
             normal:   url + 'banzaitokyo/medico/32/hospital-icon.png',
             selected: url + 'banzaitokyo/medico/32/hospital-icon.png'
@@ -48,7 +60,7 @@
     </script>
     </head>
     <body>
-    <div id="map_div" style="height: 300px; width: 600px"></div>
+    <div id="map_div" style="height: 300px; width: 100%"></div>
        
 
        

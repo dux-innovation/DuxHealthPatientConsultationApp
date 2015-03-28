@@ -38,8 +38,8 @@ sap.ui.controller("view.units",
 
     onItemPress: function()
     {
-        var app = sap.ui.getCore().byId("shell").getApp();
-        var next = sap.ui.getCore().byId("view_dates");
+    	var app = sap.ui.getCore().byId("shell").getApp();
+        var next = sap.ui.getCore().byId("view_confirmation");
         app.to(next, "slide");
     },
 
