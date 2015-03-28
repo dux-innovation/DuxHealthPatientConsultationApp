@@ -38,7 +38,7 @@ sap.ui.controller("view.units",
 
     onItemPress: function()
     {
-    	var app = sap.ui.getCore().byId("shell").getApp();
+        var app = sap.ui.getCore().byId("shell").getApp();
         var next = sap.ui.getCore().byId("view_confirmation");
         app.to(next, "slide");
     },
@@ -48,5 +48,46 @@ sap.ui.controller("view.units",
         var app = sap.ui.getCore().byId("shell").getApp();
         var next = sap.ui.getCore().byId("view_specialties");
         app.back(next, "slide");
-    }
+    },
+
+
+    onPressConfirm: function(o)
+    {
+        var oDialog1 = new sap.m.Dialog();
+        oDialog1.setTitle("Confirmação");
+        var oText = new sap.m.Text(
+        {
+            text: "Seu Consulta foi agendado com sucesso. Você receberá um alerta 24 horas antes do mesmo"
+        });
+        oDialog1.addContent(oText);
+        oDialog1.addButton(new sap.m.Button(
+        {
+            text: "OK",
+            press: function()
+            {
+                oDialog1.close();
+            }
+        }));
+        oDialog1.open();
+    },
+
+    onPressCancel: function(o)
+    {
+        var oDialog1 = new sap.m.Dialog();
+        oDialog1.setTitle("Cancelamento");
+        var oText = new sap.m.Text(
+        {
+            text: "Solicitação de Consulta cancelada"
+        });
+        oDialog1.addContent(oText);
+        oDialog1.addButton(new sap.m.Button(
+        {
+            text: "OK",
+            press: function()
+            {
+                oDialog1.close();
+            }
+        }));
+        oDialog1.open();
+    },
 });
